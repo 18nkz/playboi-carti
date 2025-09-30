@@ -1,0 +1,456 @@
+/* Tout le fond en noir, texte rouge */
+body, body * {
+  background-color: black !important;
+  color: red !important;
+}
+
+/* Force certains textes en blanc */
+.blanc, .blanc * {
+  color: white !important;
+}
+
+
+
+/* Corps général */
+body {
+  margin: 0;
+  background-color: black;
+  color: red;
+  font-family: Arial, sans-serif;
+}
+
+/* Barre de navigation */
+.navbar {
+  background-color: #111;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Menu en ligne (horizontal) */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+/* Liens du menu */
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Effet au survol */
+.menu li a:hover {
+  background-color: red;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps et fond */
+body {
+  background-color: #121212;
+  color: #eee;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1f2937; /* bleu foncé */
+  padding: 20px 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+.menu li a {
+  color: #eee;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.menu li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: #f87171; /* rouge clair */
+  transition: width 0.3s ease;
+  border-radius: 3px;
+}
+
+.menu li a:hover,
+.menu li a:focus {
+  color: #f87171;
+}
+
+.menu li a:hover::after,
+.menu li a:focus::after {
+  width: 100%;
+}
+
+/* Section accueil */
+#accueil {
+  max-width: 900px;
+  margin: 60px auto 80px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#accueil h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #f87171;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+#accueil img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 20px rgba(248, 113, 113, 0.5);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#accueil img:hover {
+  transform: scale(1.05);
+}
+
+#accueil h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #f87171;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+#accueil p {
+  max-width: 700px;
+  margin: 0 auto 15px;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background-color: #1f2937;
+  color: #bbb;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .menu {
+    gap: 30px;
+  }
+
+  #accueil h2 {
+    font-size: 2.2rem;
+  }
+
+  #accueil h3 {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+.blanc {
+  color: #ffffff !important;
+}
+
+
+
+
+
+/* Reset basique */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #ddd;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1f2937;
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.menu li a {
+  color: #eee;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu li a.active,
+.menu li a:hover,
+.menu li a:focus {
+  color: #f87171;
+}
+
+.menu li a.active::after,
+.menu li a:hover::after,
+.menu li a:focus::after {
+  width: 100%;
+}
+
+.menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #f87171;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Titres */
+.title {
+  font-family: 'Montserrat', sans-serif;
+  color: #f87171;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/* Classe blanc */
+.blanc {
+  color: #fff !important;
+}
+
+/* Liste d'albums */
+.album-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: #eee;
+}
+
+/* Sections d'album */
+.album-section {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* Image des albums */
+.album-cover {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(248, 113, 113, 0.6);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.album-cover:hover {
+  transform: scale(1.05);
+}
+
+/* Liste des morceaux */
+.tracklist {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #ddd;
+  padding-left: 20px;
+}
+
+.tracklist li {
+  margin-bottom: 8px;
+  border-left: 3px solid #f87171;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.tracklist li:hover {
+  color: #f87171;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .album-list {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1rem;
+  }
+
+  .album-cover {
+    width: 90vw;
+    height: auto;
+  }
+
+  .tracklist {
+    max-width: 90vw;
+    padding-left: 15px;
+  }
+}
+
+
+
+
+
+/* Formulaire Contact */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 80px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="text"],
+.contact-form textarea {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #444;
+  background-color: #222;
+  color: #eee;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-form input[type="email"]:focus,
+.contact-form input[type="text"]:focus,
+.contact-form textarea:focus {
+  border-color: #f87171;
+  background-color: #2a2a2a;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  padding: 14px 25px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #f87171;
+  color: #121212;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: #dc4c4c;
+  color: white;
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .contact-form {
+    padding: 0 15px;
+  }
+}
