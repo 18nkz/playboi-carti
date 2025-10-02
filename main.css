@@ -49,6 +49,11 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Effet au survol */
+.menu li a:hover {
+  background-color: red;
+  color: black;
+}
 
 
 
@@ -118,8 +123,15 @@ body {
   border-radius: 3px;
 }
 
+.menu li a:hover,
+.menu li a:focus {
+  color: #f87171;
+}
 
-
+.menu li a:hover::after,
+.menu li a:focus::after {
+  width: 100%;
+}
 
 /* Section accueil */
 #accueil {
@@ -147,7 +159,9 @@ body {
   cursor: pointer;
 }
 
-
+#accueil img:hover {
+  transform: scale(1.05);
+}
 
 #accueil h3 {
   font-family: 'Montserrat', sans-serif;
@@ -249,8 +263,17 @@ body {
   transition: color 0.3s ease;
 }
 
+.menu li a.active,
+.menu li a:hover,
+.menu li a:focus {
+  color: #f87171;
+}
 
-
+.menu li a.active::after,
+.menu li a:hover::after,
+.menu li a:focus::after {
+  width: 100%;
+}
 
 .menu li a::after {
   content: '';
@@ -314,7 +337,9 @@ body {
   cursor: pointer;
 }
 
-
+.album-cover:hover {
+  transform: scale(1.05);
+}
 
 /* Liste des morceaux */
 .tracklist {
@@ -335,6 +360,9 @@ body {
   cursor: default;
 }
 
+.tracklist li:hover {
+  color: #f87171;
+}
 
 /* Responsive */
 @media (max-width: 700px) {
@@ -413,7 +441,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
-
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: #dc4c4c;
+  color: white;
+  outline: none;
+}
 
 /* Responsive */
 @media (max-width: 650px) {
@@ -421,3 +454,12 @@ body {
     padding: 0 15px;
   }
 }
+
+.container {
+width: 100%;
+ }
+
+@media screen and (min-width: 576px) {
+ .container {
+width: 500px;
+ }
