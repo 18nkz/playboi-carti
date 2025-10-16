@@ -74,7 +74,7 @@ body {
 body {
   background-color: #121212;
   color: #eee;
-  font-family: 'Roboto', sans-serif;
+ 
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -101,7 +101,7 @@ body {
 
 .menu li a {
   color: #eee;
-  font-family: 'Montserrat', sans-serif;
+
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -142,7 +142,7 @@ body {
 }
 
 #accueil h2 {
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 3rem;
   color: #f87171;
   margin-bottom: 20px;
@@ -164,7 +164,7 @@ body {
 }
 
 #accueil h3 {
-  font-family: 'Montserrat', sans-serif;
+
   color: #f87171;
   font-size: 1.6rem;
   margin-bottom: 10px;
@@ -253,7 +253,7 @@ body {
 
 .menu li a {
   color: #eee;
-  font-family: 'Montserrat', sans-serif;
+
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -295,7 +295,6 @@ body {
 
 /* Titres */
 .title {
-  font-family: 'Montserrat', sans-serif;
   color: #f87171;
   margin-bottom: 25px;
   letter-spacing: 3px;
